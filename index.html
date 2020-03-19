@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- 对于iphone真机无效 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>中国风天气</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+
+  <div class="weather">
+    <div class="nav">
+        <div class="system-nav"></div>
+        <div class="weather-nav">
+            <div class="fl">
+              <span class="fl location-icon"></span>
+              <span class="fl location-city"></span>
+            </div>
+            <div class="fl search-box">
+              <input class="fl search-ipt" type="text" placeholder="输入城市，如：广州" autocomplete="off" />
+              <span class="fl search-icon"></span>
+            </div>
+          </div>
+    </div>
+   
+    <div class="weather-box">
+      
+      <div class="current-weather">
+        <div class="clearfix">
+          <span class="fl date"></span>
+          <span class="fl week"></span>
+        </div>
+        <div class="tem-box clearfix">
+          <span class="fl tem"></span>
+          <div class="fl weather-status">
+            <div class="weather-status-text clearfix">
+                <span class="fl qing wea"></span>
+                <span class="fl air_level"></span>
+            </div>
+              
+          </div>
+        </div>
+        <div class="weather-wind clearfix">
+            <span class="fl wind win"></span>
+            <span class="fl wind win_speed"></span>
+            <span class="fl win_meter"></span>
+          </div>
+      </div>
+
+      <div class="hours-box">
+        <div class="hours-box-title">24小时天气</div>
+        <div class="hours-weather">
+          <ul id="hoursWeather" class="clearfix">
+            
+          </ul>
+        </div>
+      </div>
+
+      <div class="future-weather">
+          <div class="future-weather-title hours-box-title">未来6天天气</div>
+          <div class="future-weather-box">
+            <ul id="futureWeather">
+              
+            </ul>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="./js/rem.js"></script>
+  <script src="./js/jquery-3.4.1.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
